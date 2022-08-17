@@ -11,7 +11,7 @@
     <div class="container">
         <h1>Cadastro Realizado</h1>
         <p>Dados cadastrados:</p>
-
+        
         <?php
             echo "<div class='alert alert-success' role='alert'>";
             echo "Prezado(a) <b>" . $_POST["primeiro-nome"] ." ".$_POST["segundo-nome"]."</b> seu cadastro foi realizado com sucesso!</div> Em breve você receberá mais
@@ -25,5 +25,4 @@
 
     </div>
 </body>
-
 </html>

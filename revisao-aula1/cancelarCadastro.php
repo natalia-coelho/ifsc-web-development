@@ -13,7 +13,7 @@
             <h1>Cadastro cancelado</h1>
         </div>
 
-        <?php require 'index.php';
+        <?php
             echo "<div class='alert alert-danger' role='alert'>";
             echo "Prezado(a) <b>" . $_POST['primeiro-nome'] ."</b> seu cadastro foi cancelado. </div> ";
         ?>
