@@ -20,6 +20,7 @@
         
         <p>
             <a href='index.php'><button class="btn btn-primary" type="button">Voltar</button>
+            <!-- o HTML vai interpretar essa parte como uma requisicao get e lá no cancela eu preciso referenciar ele certinho!!  -->
             <a href="cancelarCadastro.php?nome=<?php echo $_POST["primeiro-nome"]; ?>"><button class="btn btn-danger" type="reset">Cancelar cadastro</button>
         </p>
 

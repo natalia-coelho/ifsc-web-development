@@ -15,6 +15,8 @@
 
         <?php
             echo "<div class='alert alert-danger' role='alert'>";
+            // extensao daquela parte de passar um get através do botão
+            // arrumar e mandar pro professor
             echo "Prezado(a) <b>" . $_GET['primeiro-nome'] ."</b> seu cadastro foi cancelado. </div> ";
         ?>
         <div>
