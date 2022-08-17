@@ -15,7 +15,7 @@
 
         <?php
             echo "<div class='alert alert-danger' role='alert'>";
-            echo "Prezado(a) <b>" . $_POST['primeiro-nome'] ."</b> seu cadastro foi cancelado. </div> ";
+            echo "Prezado(a) <b>" . $_GET['primeiro-nome'] ."</b> seu cadastro foi cancelado. </div> ";
         ?>
         <div>
             <a href='index.php'>

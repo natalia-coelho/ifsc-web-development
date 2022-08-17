@@ -20,7 +20,7 @@
         
         <p>
             <a href='index.php'><button class="btn btn-primary" type="button">Voltar</button>
-            <a href='cancelarCadastro.php'><button class="btn btn-danger" type="reset">Cancelar cadastro</button>
+            <a href="cancelarCadastro.php?nome=<?php echo $_POST["primeiro-nome"]; ?>"><button class="btn btn-danger" type="reset">Cancelar cadastro</button>
         </p>
 
     </div>
