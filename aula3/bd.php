@@ -9,7 +9,7 @@ function obterConexao(){
     // Abre a conexão com o banco de dados
     // $conexao = mysqli_connect(SERVIDOR, USUARIO, SENHA, BANCODEDADOS);
     $conexao = mysqli_connect('localhost', 'root', 'aluno', 'estante'); //em casa alterar esses dados
-    return $conexao
+    return $conexao;
 }
 
 function pesquisarAutoresPorCodigoLivro($codigo){
