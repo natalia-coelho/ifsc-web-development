@@ -32,7 +32,15 @@
         </thead>
         <tbody>
             <tr>
+            <!-- foreach($lista_autores as $umAutor) -->
             <!-- como imprimir o array do php exemplo: -->
+            <!-- EXEMPLO DO PROF
+                    <tr>
+                        <th scope="row"><?php echo $umAutor['id'];?></th>
+                        <td>fazer a msm coisa com nome</td>
+                        <td>fazer a msm coisa com idade etc</td>
+                    </tr> 
+            -->
             <th scope="row"><!--<?php echo $umAutor['id'];?>--></th>
             <td>Mark</td>
             <td>Otto</td>
