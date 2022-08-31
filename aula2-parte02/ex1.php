@@ -7,11 +7,29 @@ Quantidade de números pares
 Quantidade de números ímpares*/
 
 
-imprimeNumero(1,);
+imprimeNumero($vetor=[2, 6, 8, -7, 5, -6, -1]);
 
 function imprimeNumero($vetor=array()){
-    for($i = 0; $i < $vetor.sizeof(); $i++){
-        echo $vetor[$i];
+	$neg = 0; $pos = 0; $par = 0; $imp = 0;
+	
+    for($i = 0; $i < sizeof($vetor); $i++){
+    	if($vetor[$i] < 0){
+			$neg = $neg + 1;   
+    	} elseif($vetor[$i] >= 0){
+    		$pos = $pos + 1;
+    	} 
+    	if($vetor[$i] % 2 == 0){
+    		$par = $par + 1;
+    	}
+    	if($vetor[$i] % 2 != 0){
+    		$imp = $imp + 1;
+    	}
     }
+    
+        echo "Negativos: " .$neg;
+        echo "\nPositivos: " .$pos;
+        echo "\nPares: " .$par;
+        echo "\nÍmpares: " .$imp;
+        
 }
 ?>
