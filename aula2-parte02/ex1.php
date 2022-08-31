@@ -6,9 +6,12 @@ Quantidade de números positivos;
 Quantidade de números pares
 Quantidade de números ímpares*/
 
-echo 'aaaa';
-imprimeNumero();
-function imprimeNumero($vetor = [1, 10, 5]){
-    echo $vetor[1];
+
+imprimeNumero(1,);
+
+function imprimeNumero($vetor=array()){
+    for($i = 0; $i < $vetor.sizeof(); $i++){
+        echo $vetor[$i];
+    }
 }
 ?>
