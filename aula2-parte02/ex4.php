@@ -24,28 +24,22 @@ $matriz = array(
 			array("nr" => 6, "nome" => "Mary", "idade" => 81, "cidade" => "Gaspar"),
 			array("nr" => 7, "nome" => "John", "idade" => 36, "cidade" => "Indaial")
 			);
-
-	// 	foreach($matriz as $mat){
-	// 		foreach($mat as $m){
-	// 			echo($m . " ");
-	// 		}
-	// }
 	
 	listaPorIdade($matriz);	
 	listaPorCidade($matriz);
-
+	listaPorLetra($matriz);
+	listaCidadeIdade($matriz);
 	
-	
-	function listaPorIdade($matriz = array(array())){
-		foreach($matriz as $mat){
-			foreach($mat as $m){
-				if($mat["idade"] >= 50){
-					echo($m . " ");
-				}
+function listaPorIdade($matriz = array(array())){
+	foreach($matriz as $mat){
+		foreach($mat as $m){
+			if($mat["idade"] >= 50){
+				echo($m . " ");
 			}
-				echo "\n";
 		}
+			echo "\n";
 	}
+}
 	
 function listaPorCidade($matriz = array(array())){
 	foreach($matriz as $mat){
@@ -60,13 +54,24 @@ function listaPorCidade($matriz = array(array())){
 
 function listaPorLetra($matriz = array(array())){
 	foreach($matriz as $mat){
-		foreach($mat as $m){
-			if($mat["cidade"] == 'Gaspar'){
-				echo($m . " ");
+		foreach($mat as $m){	
+			$nome = $mat['nome'];
+			if($nome[0] == 'A' || $nome[0] == 'B' || $nome[0] == 'C'){
+				echo $m ." ";	
 			}
-			echo "\n";
 		}
-	}
+		echo "\n";
+	}		
 }
 
+function listaCidadeIdade(){
+	foreach($matriz as $mat){
+		foreach($mat as $m){
+			if($mat["idade"] >= 60 && $mat["cidade"] == 'Gaspar'){
+				echo($m . " ");
+			}
+		}
+		echo "\n";
+	}
+}
 ?>
