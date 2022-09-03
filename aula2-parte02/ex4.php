@@ -25,6 +25,48 @@ $matriz = array(
 			array("nr" => 7, "nome" => "John", "idade" => 36, "cidade" => "Indaial")
 			);
 
+	// 	foreach($matriz as $mat){
+	// 		foreach($mat as $m){
+	// 			echo($m . " ");
+	// 		}
+	// }
 	
+	listaPorIdade($matriz);	
+	listaPorCidade($matriz);
+
+	
+	
+	function listaPorIdade($matriz = array(array())){
+		foreach($matriz as $mat){
+			foreach($mat as $m){
+				if($mat["idade"] >= 50){
+					echo($m . " ");
+				}
+			}
+				echo "\n";
+		}
+	}
+	
+function listaPorCidade($matriz = array(array())){
+	foreach($matriz as $mat){
+		foreach($mat as $m){
+			if($mat["cidade"] == 'Gaspar'){
+				echo($m . " ");
+			}
+			echo "\n";
+		}
+	}
+}
+
+function listaPorLetra($matriz = array(array())){
+	foreach($matriz as $mat){
+		foreach($mat as $m){
+			if($mat["cidade"] == 'Gaspar'){
+				echo($m . " ");
+			}
+			echo "\n";
+		}
+	}
+}
 
 ?>
