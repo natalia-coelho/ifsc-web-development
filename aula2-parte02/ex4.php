@@ -15,5 +15,16 @@ nr, nome, idade, cidade
 6,Mary, 81, Gaspar
 7,John, 36, Indaial*/
 
+$matriz = array(
+			array("nr" => 1, "nome" => "Bob", "idade" => 15, "cidade" => "Gaspar"),
+			array("nr" => 2, "nome" => "Dylan", "idade" => 20, "cidade" => "Blumenau"),
+			array("nr" => 3, "nome" => "Chris", "idade" => 50, "cidade" => "Blumenau"),
+			array("nr" => 4, "nome" => "Anna", "idade" => 8, "cidade" => "Indaial"),
+			array("nr" => 5, "nome" => "James", "idade" => 65, "cidade" => "Gaspar"),
+			array("nr" => 6, "nome" => "Mary", "idade" => 81, "cidade" => "Gaspar"),
+			array("nr" => 7, "nome" => "John", "idade" => 36, "cidade" => "Indaial")
+			);
+
+	
 
 ?>
