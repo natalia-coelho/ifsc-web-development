@@ -1,4 +1,4 @@
-<?
+<?php
 // Instalar mySQL workbench 6.3
 /* Outra opção é ir no localhost do xampp > phpMyadmin > config.in > abre ferramenta e não precisa instalar o workbench. Não esquecer
 de dar um start no MYSQL lá no xampp, se n funcionar é pq tem outra porta utilzando já*/
@@ -12,18 +12,20 @@ de dar um start no MYSQL lá no xampp, se n funcionar é pq tem outra porta util
 function obterConexao(){
     // Abre a conexão com o banco de dados
     // $conexao = mysqli_connect(SERVIDOR, USUARIO, SENHA, BANCODEDADOS);
-    $conexao = mysqli_connect('localhost', 'root', 'aluno', 'estante'); //em casa alterar esses dados
-    return $conexao;
+	$conexao = mysqli_connect("localhost", "root", "", "estante");
+	return $conexao;
 }
 
-function pesquisarAutoresPorCodigoLivro($codigo){
+// function pesquisarAutoresPorCodigoLivro($codigo){
 
+// }
+
+function listaAutores(){
+	$conexao = obterConexao();
+	$comandoSQL = "select * from autor order by id";
+	$query = mysqli_query($conexao, $comandoSQL);
+	$resultado = mysqli_fetch_all($query, MYSQLI_ASSOC);
+	return $resultado;
 }
 
-function pesquisarListaAutores(){
-    $conexao = obterConexao();
-    $comandoSql = "select * from autor";
-    $query = mysqli_query($conexao, $comandoSql);
-    $resultado = mysqli_fetch_all($query, MYSQLI_ASSOC);
-    return $resultado;
-}
+?>

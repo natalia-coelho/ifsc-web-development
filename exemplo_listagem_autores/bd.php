@@ -2,7 +2,7 @@
 
 
 function obterConexao(){
-	$conexao = mysqli_connect("localhost", "root", "aluno", 
+	$conexao = mysqli_connect("localhost", "root", "", 
 	"estante");
 	return $conexao;
 }	
