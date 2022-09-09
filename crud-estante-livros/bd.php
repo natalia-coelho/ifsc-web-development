@@ -12,5 +12,4 @@ function listaAutores(){
 	$resultado = mysqli_fetch_all($query, MYSQLI_ASSOC);
 	return $resultado;
 }
-
 ?>

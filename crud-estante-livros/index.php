@@ -34,6 +34,10 @@
       echo  "</tr>";
     }
     ?>
+  <form name="form" action="index.php" method="post">
+      
+
+  </form>
   </tbody>
 </table>
 </body>
