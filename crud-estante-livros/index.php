@@ -36,8 +36,8 @@
         echo  "    <td>" .$autor['website'] ."</td>";
         echo  "    <td>";
                     // pega o id através do método get com o ?
-                    echo '<a href="update.php?id='. $autor['id'] .'" class="mr-3" title="View or Update Record" data-toggle="tooltip"><span class="fa fa-eye"></span></a>';
-                    echo '<a href="insert.php?id='. $autor['id'] .'" class="mr-3" title="Insert Record" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>';
+                    echo '<a href="insert.php?id='. $autor['id'] .'" class="mr-3" title="Insert Record" data-toggle="tooltip"><span class="fa-solid fa-circle-plus"></span></a>';
+                    echo '<a href="update.php?id='. $autor['id'] .'&name='.$autor['nome'].'" class="mr-3" title="View or Update Record" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>';
                     echo '<a href="delete.php?id='. $autor['id'] .'" title="Delete Record" data-toggle="tooltip"><span class="fa fa-trash"></span></a>';
         echo  "    </td>";
         echo  "</tr>";

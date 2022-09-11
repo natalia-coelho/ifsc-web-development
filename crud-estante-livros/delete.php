@@ -11,8 +11,11 @@
         $id = $_GET['id'];
         
         $getAuthor = getAuthorById($id);
+        
         foreach($getAuthor as $author){
-
+            $nome = $author['nome'];
+            $email = $author['email'];
+            $website = $author['website'];
         }
 ?> 
     <form action="delete.php" method="get">
@@ -20,7 +23,7 @@
             <h1 class="text-center"> Author <?php echo $author['nome']?> </h1>
             <div class="col-md-6 offset-md-3">
                 <label class="form-label"> ID:</label>
-                <input type="text" class="form-control" name="id" placeholder= <?php echo $author['id']?> readonly>
+                <input type="text" class="form-control" name="id" placeholder= <?php echo $id?> readonly>
             </div>
             <div class="col-md-6 offset-md-3">
                 <label class="form-label">Name:</label>

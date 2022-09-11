@@ -39,11 +39,11 @@
             <label class="form-label">Website:</label>
             <input type="text" class="form-control" name="website">
         </div>
-            <div class="col-md-6 offset-md-3 btn">
-                <input class="btn btn-success" type="submit" value="Save">
-                <a href='index.php'><button class="btn btn-secondary" type="button">Back</button>
-            </div>
+        <div class="col-md-6 offset-md-3 btn">
+            <input class="btn btn-success" type="submit" value="Save">
+            <a href='index.php'><button class="btn btn-secondary" type="button">Back</button>
         </div>
+    </div>
 </form>
 </body>
 </html>
