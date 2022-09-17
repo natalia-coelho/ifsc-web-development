@@ -38,7 +38,7 @@
         updateRecord($id, $nome, $email, $website);
         }  
     ?>
-    
+
     <form action="update.php" method="post">
         <div class="container border">
             <h1 class="text-center"> Author <?php echo $nome?> </h1>
