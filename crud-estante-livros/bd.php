@@ -37,6 +37,9 @@ $conexao = obterConexao();
 	}
 	
 	function updateRecord($id, $nome, $email, $website){
+		if($nome == null){
+			$nome = " ";
+		}
 		$conexao = obterConexao();
 		$sql = "update autor set nome = '$nome', email = '$email', website = '$website' where id = $id;";
 		$setQuery = mysqli_query($conexao, $sql);
