@@ -1,5 +1,5 @@
 # Instituto Federal de Santa Catarina 🎓
-    ## Web Development Classes
+## Web Development Classes
 
 In this subject I had contact with:
 
